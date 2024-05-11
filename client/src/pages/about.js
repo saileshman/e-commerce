@@ -1,9 +1,6 @@
 import Layout from "../components/layout";
 
 
-
-
-
 const About = ()=>{
 
 
