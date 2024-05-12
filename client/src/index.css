@@ -29,8 +29,12 @@
 .footer a:hover{
   color: green;
 }
-   
+/*    
 .login{
-  padding-top: 200px;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  flex-direction: column;
+} */
     
