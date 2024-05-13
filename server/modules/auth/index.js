@@ -5,6 +5,10 @@ const express = require('express')
 router.use(express.json())
 
 
+
+
+
+// create user
 router.post("/register", async(req,res)=>{
 
     try {
