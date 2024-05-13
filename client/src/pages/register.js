@@ -12,14 +12,17 @@ function Register(){
 
   const handleClick = async(e)=>{
     e.preventDefault();
+    
     try{
-      const res = await axios.post(`${process.env.API}/api/v1/auth/register`,(name,email,password))
-    } catch(error){
-      alert.error("something is wrong")
-    }
-    console.log(name,email,password)
-    alert("register successful !")
-  }
+      const result = await axios.post('http://localhost:8080/api/v1/auth/register',{name,email,password})
+      console.log(result)
+      alert("register successfully");
+     }catch(e){
+      console.log(e)
+     }finally{
+      
+     }
+    }; 
 
 
     return <>
